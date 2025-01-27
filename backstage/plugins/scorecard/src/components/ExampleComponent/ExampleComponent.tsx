@@ -8,6 +8,7 @@ import {
   ContentHeader,
   HeaderLabel,
   GaugeCard,
+  Button,
   SupportButton,
 } from '@backstage/core-components';
 import { ExampleFetchComponent } from '../ExampleFetchComponent';
@@ -19,17 +20,14 @@ export const ExampleComponent = () => (
     <Header title="OpenSSF Scorecard Dashboard" >
       <HeaderLabel label="Owner" value="Team X" />
       <HeaderLabel label="Lifecycle" value="Alpha" />
+       <Button variant="contained" color="primary">
+                                              Add new repo
+                                            </Button>
     </Header>
     <Content>
 
       <Grid container spacing={3} direction="column">
-        <Grid item>
-          <InfoCard title="Project test1">
-            <Typography variant="body1">
-              Latest scores from running scorecard against the repository.
-            </Typography>
-          </InfoCard>
-        </Grid>
+
           <Grid item>
                           <GamifiedDashboard />
                         </Grid>

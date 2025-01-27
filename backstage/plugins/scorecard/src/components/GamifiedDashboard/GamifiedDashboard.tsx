@@ -1,5 +1,9 @@
 import React from "react";
 import { Box, Grid, Typography, Card, CardContent, Avatar } from "@material-ui/core";
+
+import { TabbedCard,CardTab } from '@backstage/core-components';
+import { Button } from '@backstage/core-components';
+
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import LockIcon from "@material-ui/icons/Lock";
@@ -47,10 +51,19 @@ export const GamifiedDashboard: React.FC = () => {
   const chartColors = ["#4CAF50", "#E0E0E0"]; // Green for unlocked, gray for locked
 
   return (
+ <TabbedCard title="Repo Stats">
+
+   <CardTab label="Summary">
+               <div >Some content 4</div>
+             </CardTab>
+  <CardTab label="project/xyz">
     <Box p={2}>
       {/* Top Metrics */}
       <Grid container spacing={3}>
-        <Grid item xs={6}>
+
+
+
+        <Grid item xs={4}>
           <Card>
             <CardContent>
               <Typography variant="h5">Achievements Unlocked</Typography>
@@ -72,6 +85,21 @@ export const GamifiedDashboard: React.FC = () => {
             </CardContent>
           </Card>
         </Grid>
+
+         <Grid item xs={2}>
+                        <Card>
+                          <CardContent>
+                           <Typography variant="h6">github/xyz/xxx</Typography>
+                                <Button variant="contained" color="primary">
+                                        Update with scorecard
+                                      </Button>
+                          </CardContent>
+                        </Card>
+               </Grid>
+
+
+
+
       </Grid>
 
       {/* Results Table */}
@@ -165,5 +193,18 @@ export const GamifiedDashboard: React.FC = () => {
         </Card>
       </Box>
     </Box>
+
+
+
+
+           </CardTab>
+           <CardTab label="spoole167/music_a">
+             <div >Some content 2</div>
+           </CardTab>
+           <CardTab label="Option 3">
+             <div >Some content 3</div>
+           </CardTab>
+
+         </TabbedCard>
   );
 };
