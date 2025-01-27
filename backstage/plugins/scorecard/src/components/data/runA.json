@@ -1,0 +1,17 @@
+[
+  {
+    "metric": "Security Score",
+    "value": 80,
+    "description": "Overall security score for the repository."
+  },
+  {
+    "metric": "Code Coverage",
+    "value": 70,
+    "description": "Percentage of code covered by tests."
+  },
+  {
+    "metric": "Performance",
+    "value": 90,
+    "description": "Performance benchmark score."
+  }
+]

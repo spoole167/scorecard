@@ -1,0 +1,105 @@
+{
+  "date": "2025-01-27",
+  "repo": {
+    "name": "github.com/example/repo",
+    "commit": "abcd1234"
+  },
+  "score": 7.8,
+  "checks": [
+    {
+      "name": "Binary-Artifacts",
+      "score": 10,
+      "reason": "No binary artifacts detected in the repository.",
+      "details": []
+    },
+    {
+      "name": "Branch-Protection",
+      "score": 7,
+      "reason": "Branch protection rules are partially configured for the default branch.",
+      "details": [
+        "Main branch requires reviews but does not require signed commits."
+      ]
+    },
+    {
+      "name": "Code-Review",
+      "score": 9,
+      "reason": "Code reviews are required for all changes.",
+      "details": [
+        "All pull requests require approval before merging."
+      ]
+    },
+    {
+      "name": "Contributors",
+      "score": 6,
+      "reason": "Some contributions come from unknown contributors.",
+      "details": [
+        "Found 3 commits by contributors without verified email addresses."
+      ]
+    },
+    {
+      "name": "Dangerous-Workflow",
+      "score": 8,
+      "reason": "No dangerous workflows detected, but there is a public reusable workflow with broad permissions.",
+      "details": [
+        "Workflow file: .github/workflows/deploy.yml"
+      ]
+    },
+    {
+      "name": "Dependency-Update-Tool",
+      "score": 7,
+      "reason": "Dependabot is enabled but some dependencies are outdated.",
+      "details": [
+        "3 dependencies are outdated. 2 have known vulnerabilities."
+      ]
+    },
+    {
+      "name": "Maintained",
+      "score": 8,
+      "reason": "Repository is actively maintained, but there are long response times on issues.",
+      "details": [
+        "Last commit was 10 days ago.",
+        "Several issues remain open for 6+ months."
+      ]
+    },
+    {
+      "name": "Pinned-Dependencies",
+      "score": 5,
+      "reason": "Some dependencies are not pinned in the repository.",
+      "details": [
+        "Package.json dependencies allow versions with wildcards (^, ~)."
+      ]
+    },
+    {
+      "name": "Security-Policy",
+      "score": 10,
+      "reason": "A security policy is defined in the repository.",
+      "details": [
+        "Found SECURITY.md file."
+      ]
+    },
+    {
+      "name": "Signed-Releases",
+      "score": 4,
+      "reason": "Releases are not signed.",
+      "details": [
+        "No GPG-signed tags were found for recent releases."
+      ]
+    },
+    {
+      "name": "Token-Permissions",
+      "score": 8,
+      "reason": "GitHub Actions tokens are properly scoped.",
+      "details": [
+        "All tokens are configured with 'read-only' permissions."
+      ]
+    },
+    {
+      "name": "Vulnerabilities",
+      "score": 6,
+      "reason": "Some vulnerabilities are reported but not addressed.",
+      "details": [
+        "2 vulnerabilities are unresolved in dependency xyz."
+      ]
+    }
+  ]
+}
